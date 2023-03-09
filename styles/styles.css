@@ -18,6 +18,14 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --paars: #5722CD;
+    --blauw: #4B49E8;
+    --roze: #ED4385;
+    --zwart: #0C0C0C; /*standard text */
+    --magnolia: #F2F0FF; /*for big floating words like 'hello' en 'services' */
+    --lichtgrijs: #F3F6F9; /*for the background of the project */
+}
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -35,3 +43,7 @@
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen {
+    
+}
