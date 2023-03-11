@@ -8,7 +8,7 @@
     4. Areas
         4.1 Header
         4.2 Introduction
-        etc.
+        4.3
     5. Media Queries
 ////////////////////////*/
 
@@ -18,6 +18,7 @@
     padding: 0;
     margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300&display=swap');
 :root{
     --paars: #5722CD;
     --blauw: #4B49E8;
@@ -29,7 +30,21 @@
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Merriweather', serif;
+}
 
+body{
+font-family: 'Roboto', sans-serif;
+    background-color: var(--lichtgrijs);
+    color: var(--zwart);
+}
+.introduction > p {
+    font-size: 18px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
@@ -39,8 +54,63 @@
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header{
+    display: flex;
+    background-color: var(--paars);
+    flex-direction: column;
+    flex: 0 1 600px;
 
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2.5rem;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.5rem;
+    color: #F2F0FF;
+}
 /* --------------- 4.2 Introduction ------------------- */
+.introduction  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+    align-self: center;
+    color:#F2F0FF;
+    flex:0 1 500px;
+    position: relative;
+    border-color: #0C0C0C;
+}
+.introduction >p {
+    display: flex;
+    justify-content: center;
+
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin: 40px 0 20px 0;
+    padding: 20px;
+    width: 250px;
+    border-radius: 30px;
+    background: var(--roze);
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+img {
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+}
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
